@@ -41,15 +41,40 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     // called when user presses the calc button
-    public void calculate(View view){
+    // Calculates 20%
+    public void calculate20(View view){
         //calculate input
-        Intent intent = new Intent(this, Calc.class);
+        Intent intent = new Intent(this, Calc20.class);
         EditText totalBill = (EditText)
                 findViewById(R.id.total_bill);
         String num = totalBill.getText().toString();
 
         intent.putExtra(EXTRA_MESSAGE, num);
         startActivity(intent);
+    }
+
+    public void calculate15(View view){
+
+        Intent intent = new Intent(this, calc15.class);
+        EditText totalBill = (EditText)
+                    findViewById(R.id.total_bill);
+        String num15 = totalBill.getText().toString();
+
+        intent.putExtra(EXTRA_MESSAGE, num15);
+        startActivity(intent);
 
     }
+
+    public void calculate10(View view){
+
+        Intent intent = new Intent(this, calc10.class);
+        EditText totalBill = (EditText)
+                    findViewById(R.id.total_bill);
+        String num10 = totalBill.getText().toString();
+
+        intent.putExtra(EXTRA_MESSAGE, num10);
+        startActivity(intent);
+
+    }
+
 }

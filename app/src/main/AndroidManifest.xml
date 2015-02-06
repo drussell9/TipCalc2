@@ -24,6 +24,30 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dan.tipcalc.MainActivity" />
         </activity>
+        <activity
+            android:name=".Calc20"
+            android:label="@string/title_activity_calc20"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dan.tipcalc.MainActivity" />
+        </activity>
+        <activity
+            android:name=".calc15"
+            android:label="@string/title_activity_calc15"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dan.tipcalc.MainActivity" />
+        </activity>
+        <activity
+            android:name=".calc10"
+            android:label="@string/title_activity_calc10"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dan.tipcalc.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
