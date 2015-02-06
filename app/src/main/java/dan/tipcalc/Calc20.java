@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class Calc20 extends ActionBarActivity {
 
-    public int num1;
-    public String tipS;
+    private int num1;
+    private String tipS;
 
 
     @Override

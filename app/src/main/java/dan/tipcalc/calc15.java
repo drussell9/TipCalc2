@@ -1,17 +1,34 @@
 package dan.tipcalc;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class calc15 extends ActionBarActivity {
+
+    private int num1;
+    private String tipS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc15);
+
+        Intent intent = getIntent();
+        String totalbill = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        int num = Integer.parseInt(totalbill);
+        double tip = calc(num);
+        tipS = Double.toString(tip);
+
+        TextView textView = new TextView(this);
+        textView.setTextSize(40);
+        textView.setText(tipS);
+        setContentView(textView);
+
     }
 
 
@@ -35,5 +52,12 @@ public class calc15 extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public static double calc(double num1) {
+        double result = 0;
+
+        result = num1 * .15;
+        return result;
     }
 }
