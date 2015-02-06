@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+
+
+
+    <EditText
+        android:id="@+id/total_bill"
+
+
+        android:layout_height="wrap_content"
+        android:hint="@string/total_bill"
+        android:inputType="number"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_calc"
+        android:onClick="calculate"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tip: "
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tip"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+
+</LinearLayout>
