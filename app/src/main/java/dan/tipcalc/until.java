@@ -30,7 +30,7 @@ public class until extends ActionBarActivity {
 
         TextView textView = new TextView(this);
         textView.setTextSize(40);
-        textView.setText(daysLeft);
+        textView.setText(daysUntil);
         setContentView(textView);
 
 

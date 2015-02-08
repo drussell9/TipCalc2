@@ -79,7 +79,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void calculate10(View view){
 
-       
+
         Intent intent = new Intent(this, calc10.class);
 
         EditText totalBill = (EditText)
@@ -97,13 +97,8 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-
-
-
-
-
     }
-/**
+
     public void remain(View view){
 
         Intent intent = new Intent(this, until.class);
@@ -115,6 +110,6 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
 
     }
-**/
+
 
 }
