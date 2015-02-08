@@ -79,17 +79,20 @@ public class MainActivity extends ActionBarActivity {
 
     public void calculate10(View view){
 
+        String num10;
         Intent intent = new Intent(this, calc10.class);
-        EditText totalBill = (EditText)
+
+            EditText totalBill = (EditText)
                     findViewById(R.id.total_bill);
-        String num10 = totalBill.getText().toString();
+            num10 = totalBill.getText().toString();
 
-        if(totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")){
-            Toast.makeText(this,"Please enter something into the text box.", Toast.LENGTH_LONG).show();
-        }
-
-        intent.putExtra(EXTRA_MESSAGE, num10);
-        startActivity(intent);
+            if (totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")) {
+                Toast.makeText(this, "Please enter something into the text box.", Toast.LENGTH_LONG).show();
+            }
+            else {
+                intent.putExtra(EXTRA_MESSAGE, num10);
+                startActivity(intent);
+            }
 
 
 
