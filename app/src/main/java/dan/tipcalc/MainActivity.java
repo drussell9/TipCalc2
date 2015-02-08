@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -49,6 +50,11 @@ public class MainActivity extends ActionBarActivity {
                 findViewById(R.id.total_bill);
         String num = totalBill.getText().toString();
 
+        if(totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")){
+            Toast.makeText(this,"Please enter something into the text box.", Toast.LENGTH_LONG).show();
+        }
+
+
         intent.putExtra(EXTRA_MESSAGE, num);
         startActivity(intent);
     }
@@ -60,8 +66,14 @@ public class MainActivity extends ActionBarActivity {
                     findViewById(R.id.total_bill);
         String num15 = totalBill.getText().toString();
 
+        if(totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")){
+            Toast.makeText(this,"Please enter something into the text box.", Toast.LENGTH_LONG).show();
+        }
+
         intent.putExtra(EXTRA_MESSAGE, num15);
         startActivity(intent);
+
+
 
     }
 
@@ -72,7 +84,25 @@ public class MainActivity extends ActionBarActivity {
                     findViewById(R.id.total_bill);
         String num10 = totalBill.getText().toString();
 
+        if(totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")){
+            Toast.makeText(this,"Please enter something into the text box.", Toast.LENGTH_LONG).show();
+        }
+
         intent.putExtra(EXTRA_MESSAGE, num10);
+        startActivity(intent);
+
+
+
+    }
+
+    public void remain(View view){
+
+        Intent intent = new Intent(this, until.class);
+        EditText totalBill = (EditText) findViewById(R.id.total_bill);
+
+        String remain = totalBill.getText().toString();
+
+        intent.putExtra(EXTRA_MESSAGE, remain);
         startActivity(intent);
 
     }

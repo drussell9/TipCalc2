@@ -11,5 +11,6 @@
     <string name="title_activity_calc20">Calc20</string>
     <string name="title_activity_calc15">calc15</string>
     <string name="title_activity_calc10">calc10</string>
+    <string name="title_activity_until">until</string>
 
 </resources>
