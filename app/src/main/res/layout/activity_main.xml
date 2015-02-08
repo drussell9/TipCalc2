@@ -15,7 +15,7 @@
 
         <EditText
             android:id="@+id/total_bill"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="@string/total_bill"
             android:inputType="number"
             android:layout_width="wrap_content"
@@ -33,12 +33,30 @@
         <!-- Button For 20% -->
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="96dp"
             android:text="Calculate 20%"
             android:id="@+id/Calc20"
             android:onClick="calculate20"
             android:layout_column="0"
-            android:layout_weight="1" />
+            android:layout_weight=".5"
+
+            />
+
+        <!--
+            15% Button
+        -->
+
+        <Button
+
+            android:layout_height="96dp"
+            android:layout_width="wrap_content"
+            android:text="Calculate 15%"
+            android:id="@+id/Calc15"
+            android:onClick="calculate15"
+            android:layout_column="0"
+            android:layout_weight=".5"
+            />
+
         </TableRow>
 
     <TableRow
@@ -52,18 +70,15 @@
     <TableRow
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-        <!-- Button For 15% -->
+        <!-- Button For 15%
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calculate 15%"
-            android:id="@+id/Calc15"
-            android:onClick="calculate15"
-            android:layout_column="0"
+
             android:layout_weight="1"
             android:layout_span="3"
             />
-
+-->
 
     </TableRow>
 
@@ -73,7 +88,7 @@
         <!-- Button For 10% -->
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="96dp"
             android:text="Calculate 10%"
             android:id="@+id/calc10"
             android:onClick="calculate10"
@@ -88,7 +103,7 @@
     <TableRow
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-
+<!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,7 +115,7 @@
             android:layout_span="2"
 
             />
-
+-->
         </TableRow>
 
     <TableRow

@@ -52,11 +52,11 @@ public class MainActivity extends ActionBarActivity {
 
         if(totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")){
             Toast.makeText(this,"Please enter something into the text box.", Toast.LENGTH_LONG).show();
+        }else {
+
+            intent.putExtra(EXTRA_MESSAGE, num);
+            startActivity(intent);
         }
-
-
-        intent.putExtra(EXTRA_MESSAGE, num);
-        startActivity(intent);
     }
 
     public void calculate15(View view){
@@ -68,11 +68,11 @@ public class MainActivity extends ActionBarActivity {
 
         if(totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")){
             Toast.makeText(this,"Please enter something into the text box.", Toast.LENGTH_LONG).show();
+        }else {
+
+            intent.putExtra(EXTRA_MESSAGE, num15);
+            startActivity(intent);
         }
-
-        intent.putExtra(EXTRA_MESSAGE, num15);
-        startActivity(intent);
-
 
 
     }
@@ -87,14 +87,17 @@ public class MainActivity extends ActionBarActivity {
         if(totalBill.getText().toString().equals(null) || totalBill.getText().toString().equals("")){
             Toast.makeText(this,"Please enter something into the text box.", Toast.LENGTH_LONG).show();
         }
+        else{
+            intent.putExtra(EXTRA_MESSAGE, num10);
+            startActivity(intent);
+        }
 
-        intent.putExtra(EXTRA_MESSAGE, num10);
-        startActivity(intent);
+
 
 
 
     }
-
+/**
     public void remain(View view){
 
         Intent intent = new Intent(this, until.class);
@@ -106,5 +109,6 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
 
     }
+**/
 
 }
