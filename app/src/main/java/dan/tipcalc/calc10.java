@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class calc10 extends ActionBarActivity {
 
-    private int num1;
+    private double num1;
     private String tipS;
 
     @Override
@@ -20,7 +20,7 @@ public class calc10 extends ActionBarActivity {
 
         Intent intent = getIntent();
         String totalbill = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        int num = Integer.parseInt(totalbill);
+        double num = Double.parseDouble(totalbill);
         double tip = calc(num);
         tipS = Double.toString(tip);
 
